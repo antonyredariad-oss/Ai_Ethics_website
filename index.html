@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مسابقة أخلاقيات الذكاء الاصطناعي - ذكاء بأخلاق</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Font Awesome لإظهار الأيقونات -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Custom Style الملف الخارجي -->
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" type="image/jpeg" href="img/1dabd346-ee70-464e-b8fa-806f057bb779.jpeg">
+
+    <!-- Open Graph Meta Tags لمشاركة اللينك -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="مسابقة أخلاقيات الذكاء الاصطناعي - ذكاء بأخلاق">
+    <meta property="og:description" content="دليل المبادئ الأخلاقية للذكاء الاصطناعي - القواعد والأسس لضمان استخدام التكنولوجيا بشكل آمن ومسؤول.">
+    <meta property="og:image" content="https://YOUR-DOMAIN.netlify.app/img/1dabd346-ee70-464e-b8fa-806f057bb779.jpeg">
+
+    <!-- كود الـ CSS المطور الخاص بالخلفية وإصلاح تضارب الألوان والتغطية -->
+    <style>
+        body {
+            font-family: 'Cairo', system-ui, -apple-system, sans-serif;
+            color: #f8fafc; /* تفتيح الخط الأساسي ليظهر على الخلفية المظلمة */
+            overflow-x: hidden;
+            width: 100%;
+            min-height: 100vh; /* يضمن امتداد الخلفية لآخر الصفحة عند التمرير */
+            
+            /* كود الخلفية الهندسية المميزة الخاص بك بعد الدمج الاحترافي */
+            background: 
+              linear-gradient(30deg, #111111 12%, transparent 12.5%, transparent 87%, #111111 87.5%, #111111),
+              linear-gradient(150deg, #111111 12%, transparent 12.5%, transparent 87%, #111111 87.5%, #111111),
+              linear-gradient(30deg, #111111 12%, transparent 12.5%, transparent 87%, #111111 87.5%, #111111),
+              linear-gradient(150deg, #111111 12%, transparent 12.5%, transparent 87%, #111111 87.5%, #111111),
+              linear-gradient(60deg, #77777777 25%, transparent 25.5%, transparent 75%, #77777777 75%, #77777777),
+              linear-gradient(60deg, #77777777 25%, transparent 25.5%, transparent 75%, #77777777 75%, #77777777),
+              #000000; 
+              
+            background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+            background-size: 80px 140px;
+            background-attachment: fixed; /* تثبيت الخلفية الهندسية أثناء التمرير لشكل أكثر احترافية */
+            box-shadow: inset 0 0 100px rgba(255, 215, 0, 0.1);
+        }
+
+        /* تنسيقات إضافية لجعل الكروت تبدو زجاجية شفافة وتظهر الخلفية من ورائها */
+        .custom-card {
+            background: rgba(255, 255, 255, 0.05) !important;
+            border: 1px solid rgba(255, 255, 255, 0.1) !important;
+            color: #ffffff !important;
+            backdrop-filter: blur(5px);
+        }
+        
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 24px rgba(56, 189, 248, 0.2) !important; /* توهج أزرق يتماشى مع الفوتر */
+        }
+        
+        .icon-box {
+            width: 55px;
+            height: 55px;
+            border-radius: 14px;
+            background-color: rgba(56, 189, 248, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .shadow__btn {
+            display: inline-block;
+            padding: 10px 24px;
+            border-radius: 50px;
+            color: #fff;
+            background: #0d6efd;
+            text-decoration: none;
+            box-shadow: 0 4px 15px rgba(13, 110, 253, 0.4);
+            transition: 0.3s;
+        }
+
+        .shadow__btn:hover {
+            background: #0b5ed7;
+            color: #fff;
+            transform: scale(1.05);
+        }
+
+        /* تعديل ألوان الجدول ليتناسب مع الخلفية المظلمة */
+        .table {
+            color: #fff !important;
+        }
+        .table-hover tbody tr:hover {
+            background-color: rgba(255, 255, 255, 0.05) !important;
+            color: #fff !important;
+        }
+        .text-muted-mt-2{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1. (Navbar) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
+        <div class="container">
+            <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="#home">
+                <img src="img/1dabd346-ee70-464e-b8fa-806f057bb779.jpeg" alt="شعار ذكاء بأخلاق" height="40" class="d-inline-block align-text-top rounded">
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto gap-2">
+                    <li class="nav-item"><a class="nav-link active px-3 rounded-pill" href="#home">الرئيسية</a></li>
+                    <li class="nav-item"><a class="nav-link px-3 rounded-pill" href="#principles">المبادئ الأخلاقية</a></li>
+                    <li class="nav-item"><a class="nav-link px-3 rounded-pill" href="#comparison">مقارنة السلوكيات</a></li>
+                    <li class="nav-item"><a class="nav-link px-3 rounded-pill" href="#faq">الأسئلة الشائعة</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 2. (Hero Section - جعلنا الخلفية شفافة لتعرض هندسة الموقع) -->
+    <header id="home" class="bg-transparent text-white text-center py-5">
+        <div class="container py-5 position-relative" style="z-index: 2;">
+            <h1 class="display-4 fw-bold mb-3 text-white">الذكاء الاصطناعي في خدمة المجتمع.. بوعي وأمان</h1>
+            <p class="lead mb-4 text-white-50 mx-auto" style="max-width: 750px;">التكنولوجيا قوة خارقة، وأخلاقياتنا هي حزام الأمان الذي يحمي المجتمع والبيئة.</p>
+            <a href="principles.html" class="shadow__btn">
+                استكشف المبادئ الأخلاقية
+            </a>
+        </div>
+    </header>
+
+    <!-- 3. (Cards Section - تمت إزالة bg-light وتطبيق كلاس المظهر الزجاجي الشفاف) -->
+    <section id="principles" class="py-5 bg-transparent">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold display-6 text-white">أركان أخلاقيات الذكاء الاصطناعي</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-3 col-sm-6">
+                    <div class="card h-100 text-center border-0 p-3 card-hover custom-card">
+                        <div class="card-body">
+                            <div class="icon-box text-info fs-2 mb-3 mx-auto">🔒</div>
+                            <h5 class="card-title fw-bold mb-3 text-white">الخصوصية والأمان</h5>
+                            <p class="card-text text-white-50 fs-6">صورك وبياناتك الشخصية ملك لك وحدك، لا تشارك معلوماتك الحساسة مع أدوات الذكاء الاصطناعي دون حذر.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card h-100 text-center border-0 p-3 card-hover custom-card">
+                        <div class="card-body">
+                            <div class="icon-box text-info fs-2 mb-3 mx-auto">📝</div>
+                            <h5 class="card-title fw-bold mb-3 text-white">الأمانة العلمية</h5>
+                            <p class="card-text text-white-50 fs-6">استخدم الذكاء الاصطناعي كمساعد للتعليم وفهم الدروس المعقدة، وليس لنسخ الواجبات والأبحاث ونسبها لنفسك.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card h-100 text-center border-0 p-3 card-hover custom-card">
+                        <div class="card-body">
+                            <div class="icon-box text-info fs-2 mb-3 mx-auto">⚖️</div>
+                            <h5 class="card-title fw-bold mb-3 text-white">الصدق والعدالة</h5>
+                            <p class="card-text text-white-50 fs-6">تأكد من صحة المعلومات قبل نشرها، وابتعد تماماً عن صنع أو تداول الصور والفيديوهات المزيفة (Deepfake).</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card h-100 text-center border-0 p-3 card-hover custom-card">
+                        <div class="card-body">
+                            <div class="icon-box text-info fs-2 mb-3 mx-auto">🌿</div>
+                            <h5 class="card-title fw-bold mb-3 text-white">خدمة المجتمع</h5>
+                            <p class="card-text text-white-50 fs-6">وجّه حلول الذكاء الاصطناعي لمعالجة مشكلات الواقع مثل الزراعة الذكية وتوفير الطاقة وتحسين التعليم.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. (Dos & Don'ts Table) -->
+    <section id="comparison" class="py-5 bg-transparent">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold display-6">دليل السلوكيات: الاستخدام الصحيح vs الممنوع</h2>
+            </div>
+            <div class="table-responsive">
+                <table class="table table-hover align-middle border text-center mb-0">
+                    <thead class="table-dark">
+                        <tr>
+                            <th class="py-3">المجال</th>
+                            <th class="py-3 text-success">🟢 الاستخدام الأخلاقي (الصح)</th>
+                            <th class="py-3 text-danger">🔴 الاستخدام غير الأخلاقي (الممنوع)</th>
+                        </tr>
+                    </thead>
+                    <tbody class="fs-6">
+                        <tr>
+                            <td class="fw-bold bg-light">المذاكرة والتعلم</td>
+                            <td>تبسيط المفاهيم الصعبة واقتراح أفكار للمشاريع.</td>
+                            <td>نقل حلول الواجبات والاختبارات بالكامل بدون فهم.</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-bold bg-light">الصور والميديا</td>
+                            <td>إنشاء تصميمات ورسومات مبتكرة لخدمة الأبحاث.</td>
+                            <td>تعديل صور الآخرين أو تركيب أوجههم لإحراجهم.</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-bold bg-light">الأخبار والمعلومات</td>
+                            <td>البحث والتأكد من صحة المصادر العلمية والرسمية.</td>
+                            <td>نشر الإشاعات والمعلومات الخاطئة التي ينشئها النظام.</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-bold bg-light">البحث العلمي والتقارير</td>
+                            <td>مراجعة الأخطاء الإملائية وتنظيم شكل البحث وترتيب الأفكار.</td>
+                            <td>جعل الذكاء الاصطناعي يكتب البحث بالكامل ونسبته لنفسك.</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-bold bg-light">البرمجة والتطوير</td>
+                            <td>البحث عن الأخطاء في الكود الخاص بك وتعلم طرق برمجية جديدة.</td>
+                            <td>سرقة أكواد الآخرين أو استخدام النظام لصنع برامج تضر أجهزة الناس.</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-bold bg-light">كتابة المحتوى</td>
+                            <td>أخذ أفكار ملهمة لكتابة مقال أو تحسين أسلوبك في الكتابة.</td>
+                            <td>تقليد حسابات أشخاص آخرين ونشر كلام يسيء إليهم أو يخدع المتابعين.</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-bold bg-light">البيانات والحسابات</td>
+                            <td>تأمين حساباتك واستخدام التكنولوجيا لحماية معلوماتك الشخصية.</td>
+                            <td>محاولة اختراق خصوصية الناس أو جمع بياناتهم بدون علمهم.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. (Accordion Section) -->
+    <section id="faq" class="py-5 bg-transparent">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold text-primary display-6">أسئلة شائعة عن أخلاقيات الذكاء الاصطناعي</h2>
+                <p class="text-muted-mt-2">إجابات تبسيطية وشاملة لمفاهيم وأخلاقيات الذكاء الاصطناعي</p>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="accordion faq-accordion d-flex flex-column gap-3" id="faqAccordion">
+                        
+                        <!-- السؤال الأول -->
+                        <div class="accordion-item shadow-sm">
+                            <h3 class="accordion-header" id="headingOne">
+                                <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    🔹 ما الهدف الرئيسي من الذكاء الاصطناعي؟
+                                </button>
+                            </h3>
+                            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    تصميم وتطوير أنظمة برمجية قادرة على محاكاة القدرات الذهنية البشرية، مثل التعلم، الاستنتاج، والتفكير، وحل المشكلات لأداء المهام المعقدة واتخاذ القرارات بكفاءة عالية.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- السؤال الثاني -->
+                        <div class="accordion-item shadow-sm">
+                            <h3 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                                    🔹 ما هو دور الذكاء الاصطناعي في المجتمع؟
+                                </button>
+                            </h3>
+                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    يساهم الذكاء الاصطناعي في تطوير وتحسين مجالات عديدة في حياتنا، مثل:
+                                    <ul class="mt-2 mb-0">
+                                        <li><strong>التعليم:</strong> تقديم وسائل تعليمية تفاعلية وتجربة تعلم مخصصة لكل طالب.</li>
+                                        <li><strong>الطب والرعاية الصحية:</strong> المساعدة في التشخيص المبكر للأمراض وتحليل الصور الطبية.</li>
+                                        <li><strong>الخدمات والصناعة:</strong> أتمتة الأعمال التكرارية وتحسين سرعة ودقة الإنتاج.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- السؤال الثالث -->
+                        <div class="accordion-item shadow-sm">
+                            <h3 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                                    🔹 ما هي أخلاقيات استخدام الذكاء الاصطناعي؟
+                                </button>
+                            </h3>
+                            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    هي المبادئ والقواعد التي تضمن استخدام التكنولوجيا بشكل آمن ومسؤول، وأهمها:
+                                    <ul class="mt-2 mb-0">
+                                        <li><strong>الخصوصية:</strong> حماية بيانات المستخدمين وعدم مشاركتها دون إذن.</li>
+                                        <li><strong>العدالة وعدم التحيز:</strong> تقديم نتائج عادلة لجميع الفئات دون تمييز.</li>
+                                        <li><strong>الشفافية والمسؤولية:</strong> وضوح طريقة عمل النظام وتحديد المسؤول عن أخطائه.</li>
+                                        <li><strong>الأمانة العلمية:</strong> مراعاة الحقيقة وتجنب نشر المعلومات الخاطئة.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- السؤال الرابع -->
+                        <div class="accordion-item shadow-sm">
+                            <h3 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+                                    🔹 ما هي إيجابيات وسلبيات الذكاء الاصطناعي؟
+                                </button>
+                            </h3>
+                            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p class="mb-2"><strong>الإيجابيات:</strong> السرعة والدقة العالية، معالجة كميات ضخمة من البيانات، وتوفير الوقت والجهد في المهام التكرارية.</p>
+                                    <p class="mb-0"><strong>السلبيات:</strong> احتمال الاعتماد المفرط عليه مما يقلل التفكير الإبداعي، مخاطر انتهاك الخصوصية، والتأثير على بعض الوظائف التقليدية.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- السؤال الخامس -->
+                        <div class="accordion-item shadow-sm">
+                            <h3 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive">
+                                    ❓ هل يمكن للذكاء الاصطناعي أن يستبدل العقل البشري؟
+                                </button>
+                            </h3>
+                            <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    لا، الذكاء الاصطناعي مجرد أداة تعتمد على البيانات، بينما العقل البشري يمتلك الإبداع والأخلاق والضمير.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- السؤال السادس -->
+                        <div class="accordion-item shadow-sm">
+                            <h3 class="accordion-header" id="headingSix">
+                                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix">
+                                    ❓ ماذا أفعل إذا أخرج لي الذكاء الاصطناعي معلومة خاطئة؟
+                                </button>
+                            </h3>
+                            <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    يجب عليك مراجعة المصادر والكتب المدرسية لتصحيح المعلومة فوراً وعدم تداولها.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- السؤال السابع -->
+                        <div class="accordion-item shadow-sm">
+                            <h3 class="accordion-header" id="headingSeven">
+                                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven">
+                                    ❓ كيف أحمي نفسي أثناء استخدام برامج الذكاء الاصطناعي؟
+                                </button>
+                            </h3>
+                            <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    تجنب إدخال اسمك الكامل، عنوانك، أرقامك السرية، أو صورك الخاصة داخل أي منصة ذكاء اصطناعي.
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. تذييل الصفحة (Footer) -->
+    <footer class="text-white text-center py-5" style="position: relative; z-index: 10; background: linear-gradient(180deg, #090c10 0%, #0f1319 100%); border-top: 2px solid #38bdf8; box-shadow: 0 -15px 40px rgba(0, 0, 0, 0.5); backdrop-filter: blur(10px);">
+        <div class="container">
+            <div class="mb-4 d-inline-block px-4 py-2 rounded-pill" style="background: rgba(56, 189, 248, 0.06); border: 1px solid rgba(56, 189, 248, 0.2); box-shadow: 0 0 20px rgba(56, 189, 248, 0.1);">
+                <h5 class="mb-0 fw-bold text-uppercase tracking-wide" style="color: #38bdf8; text-shadow: 0 0 10px rgba(56, 189, 248, 0.5); font-size: 1.3rem;">
+                    🎯 مسابقة أخلاقيات الذكاء الاصطناعي 2026
+                </h5>
+            </div>
+            
+            <div class="mx-auto my-3" style="width: 80px; height: 2px; background: linear-gradient(90deg, transparent, #38bdf8, transparent); opacity: 0.7;"></div>
+            
+            <div class="d-flex flex-wrap justify-content-center align-items-center gap-3 mt-4">
+                
+                <div class="px-3 py-2 rounded-3 shadow-sm text-secondary fs-6" style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.07);">
+                    تصميم وإعداد الطالب: <strong class="text-white ms-1 fw-bold" style="color: #ffffff;">أنطوني رضا</strong>
+                </div>
+
+                <span class="d-none d-md-inline text-muted opacity-25">|</span>
+
+                <div class="px-3 py-2 rounded-3 shadow-sm text-secondary fs-6" style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.07);">
+                    تحت إشراف مدرسة المادة: <strong class="text-white ms-1 fw-bold" style="color: #ffffff;">مس ايمان رمضان</strong>
+                </div>
+
+                <span class="d-none d-md-inline text-muted opacity-25">|</span>
+
+                <div class="px-3 py-2 rounded-3 shadow-sm text-secondary fs-6" style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.07);">
+                    مدرسة: <span class="fw-semibold" style="color: #94a3b8;">الشيخ زايد الحي الأول الرسمية للغات</span>
+                </div>
+                
+            </div>
+        </div>
+    </footer>
+
+    <!-- ملف Bootstrap JS المحلي -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
